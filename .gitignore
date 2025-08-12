@@ -1,3 +1,25 @@
-# Ignore Snakemake and conda environments
+# Ignore Snakemake cache and logs
 .snakemake/
+logs/
+
+# Ignore conda environments
 *.conda
+envs/*
+
+# Ignore large output files
+output/
+results/
+*.fa
+*.fasta
+*.gbk
+*.gff
+*.bam
+*.sam
+*.vcf
+*.gz
+*.zip
+*.tar.gz
+
+# Ignore temporary files
+*.tmp
+*.swp
