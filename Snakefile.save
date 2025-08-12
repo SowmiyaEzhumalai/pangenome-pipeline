@@ -1,0 +1,42 @@
+configfile:"config.yaml"
+
+
+rule all:
+    input:
+        expand("prokka/{sample}/{sample}.gff", sample=config["samples"]),
+        "roary_output",
+        "roary_output/roary_plots/"
+
+rule prokka_activate:
+    shell:
+        "conda activate snakemake_env
+conda activate /home/mth22/pangenome_pipeline/.snakemake/conda/65186cc54137d906081aaf378864a9ee"
+
+rule prokka_annotation:
+    input:
+        "Nucleotide_Files_Fasta_Format/{sample}.fasta"
+    output:
+        "prokka/{sample}/{sample}.gff"
+    conda:
+        "envs/prokka.yaml"
+    shell:
+        "./annotate.sh {input} {output}"
+
+rule roary_pipeline:
+    input:
+        expand("prokka/{sample}/{sample}.gff", sample=config["samples"])
+    output:
+        directory("roary_output")
+    conda:
+        "envs/roary.yaml"
+    shell:
+        "roary -f roary_output -e -n -v -p 64 -i 60 {input}"
+
+rule roary_plots:
+    input:
+        newick_file="roary_output/accessory_binary_genes.fa.newick",
+        gene_pres_abs="roary_output/gene_presence_absence.csv"
+    output:
+        directory("roary_output/roary_plots")
+    shell:
+        "python roary_plots.py {input.newick_file} {input.gene_pres_abs} {output}"

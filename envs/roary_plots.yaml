@@ -1,0 +1,10 @@
+name: roary_plots
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.8
+  - pandas
+  - matplotlib
+  - seaborn
+  - biopython
