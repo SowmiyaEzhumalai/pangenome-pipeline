@@ -212,17 +212,18 @@ This pipeline relies on the following open-source tools:
 ## References
 
 PANGENOME
-Golchha N.C., Nighojkar A. & Nighojkar S. 2024. Bacterial pangenome: A review on the current strategies, tools and applications. Medinformatics. . https://doi.org/10.47852/bonviewMEDIN42022496
-Matthews, C. A., Watson-Haigh, N. S., Burton, R. A., & Sheppard, A. E. (2024). A gentle introduction to pangenomics. Briefings in bioinformatics, 25(6), bbae588. https://doi.org/10.1093/bib/bbae588
+
+- Golchha N.C., Nighojkar A. & Nighojkar S. 2024. Bacterial pangenome: A review on the current strategies, tools and applications. Medinformatics. . https://doi.org/10.47852/bonviewMEDIN42022496
+- Matthews, C. A., Watson-Haigh, N. S., Burton, R. A., & Sheppard, A. E. (2024). A gentle introduction to pangenomics. Briefings in bioinformatics, 25(6), bbae588. https://doi.org/10.1093/bib/bbae588
 
 SNAKEMAKE
-Köster J. & Rahmann S. 2012. Snakemake--a scalable bioinformatics workflow engine. Bioinformatics. 28: 2520–2522. https://doi.org/10.1093/bioinformatics/bty350
+- Köster J. & Rahmann S. 2012. Snakemake--a scalable bioinformatics workflow engine. Bioinformatics. 28: 2520–2522. https://doi.org/10.1093/bioinformatics/bty350
 
 PROKKA
-Seemann T. 2014. Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30: 2068–2069. https://doi.org/10.1093/bioinformatics/btu153
+- Seemann T. 2014. Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30: 2068–2069. https://doi.org/10.1093/bioinformatics/btu153
 
 ROARY
-Page A.J., Cummins C.A., Hunt M., Wong V.K., Reuter S., Holden M.T.G., Fookes M., Falush D., Keane J.A. & Parkhill J. 2015. Roary: rapid large-scale prokaryote pan genome analysis. Bioinformatics. 31: 3691–3693. https://doi.org/10.1093/bioinformatics/btv421
+-Page A.J., Cummins C.A., Hunt M., Wong V.K., Reuter S., Holden M.T.G., Fookes M., Falush D., Keane J.A. & Parkhill J. 2015. Roary: rapid large-scale prokaryote pan genome analysis. Bioinformatics. 31: 3691–3693. https://doi.org/10.1093/bioinformatics/btv421
 
 
 
