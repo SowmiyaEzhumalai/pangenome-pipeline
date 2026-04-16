@@ -1,6 +1,6 @@
 # 🧬 Pangenome Pipeline
 
-A reproducible, Snakemake-based pipeline for bacterial pangenome construction and analysis. This workflow automates genome annotation with **Prokka**, pangenome clustering with **Roary**, visualization of core/accessory/unique gene distributions, and gene list extraction — all managed via isolated Conda environments.
+A reproducible, Snakemake-based pipeline for bacterial pangenome construction and analysis. This workflow automates genome annotation with **Prokka**, pangenome clustering with **Roary**, visualization of core,accessory and unique gene distributions, and gene list extraction - all managed via isolated Conda environments.
 
 ---
 
