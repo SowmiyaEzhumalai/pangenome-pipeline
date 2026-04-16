@@ -15,7 +15,6 @@ A reproducible, Snakemake-based pipeline for bacterial pangenome construction an
 - [Usage](#usage)
 - [Output](#output)
 - [Samples](#samples)
-- [Contributing](#contributing)
 - [Acknowledgements](#acknowledgements)
 - [References](#references)
 
