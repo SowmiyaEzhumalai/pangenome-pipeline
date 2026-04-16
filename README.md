@@ -16,6 +16,7 @@ A reproducible, Snakemake-based pipeline for bacterial pangenome construction an
 - [Output](#output)
 - [Samples](#samples)
 - [Acknowledgements](#acknowledgements)
+- [Note to Users](#notetousers)
 - [References](#references)
 
 ---
@@ -28,7 +29,7 @@ Pangenomics compares gene content across multiple strains of a species to identi
 - **Accessory genome** — genes present in some but not all strains (flexible functions)
 - **Unique genes** — genes found in only one strain (strain-specific features)
 
-This pipeline processes 42 *Pediococcus acidilactici* genome assemblies through a fully automated workflow, producing a presence-absence matrix, phylogenetic tree, and categorised gene lists.
+This pipeline processes 42 *Pediococcus acidilactici* genome sequences through a fully automated workflow, producing a presence-absence matrix, phylogenetic tree, categorised gene lists and their respective sequences.
 
 ---
 
@@ -207,6 +208,15 @@ This pipeline relies on the following open-source tools:
 - [Roary](https://sanger-pathogens.github.io/Roary/) — fast large-scale prokaryote pan genome analysis
 - [Snakemake](https://snakemake.readthedocs.io/) — workflow management system
 - [roary_plots.py](https://github.com/sanger-pathogens/Roary/blob/master/contrib/roary_plots/roary_plots.py) — pangenome visualisation script
+
+
+---
+
+## Note to users
+
+- To run this pipeline for your own data, please make sure you have modified the parameters in the Prokka and Roary commands in the Snakefile and run.
+
+---
 
 ## References
 
